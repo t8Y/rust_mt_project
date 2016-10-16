@@ -1,9 +1,11 @@
 [package]
-name = "mt_project"
+name = "rust_mt_project"
 version = "0.1.0"
 authors = ["takahiro"]
 
 [dependencies]
-name = "dll_example1"
+
+[lib]
+name = "test"
 path = "src/lib.rs"
 crate-type = ["dylib"]
