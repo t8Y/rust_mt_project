@@ -5,4 +5,5 @@ authors = ["takahiro"]
 
 [dependencies]
 name = "dll_example1"
-crate-type = "dylib"
+path = "src/lib.rs"
+crate-type = ["dylib"]
