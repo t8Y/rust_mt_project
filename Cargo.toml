@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["takahiro"]
 
 [dependencies]
+name = "dll_example1"
+crate-type = ["dylib"]
