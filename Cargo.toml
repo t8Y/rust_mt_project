@@ -5,4 +5,4 @@ authors = ["takahiro"]
 
 [dependencies]
 name = "dll_example1"
-crate-type = [["dylib"]]
+crate-type = "dylib"
