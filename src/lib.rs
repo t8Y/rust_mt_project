@@ -1,5 +1,5 @@
 #[no_mangle]
-#[export_name="square"]
+#[export_name="_square"]
 pub extern "system" fn square(x: i32) -> i32 {
     x * x
 }
