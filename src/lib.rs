@@ -1,13 +1,15 @@
 #[no_mangle]
-#[export_name="_square"]
-pub extern "system" fn square(x: i32) -> i32 {
-    x * x
-}
-
 #[export_name="_test"]
 pub extern "system" fn test(){
     println!("hello world!");
 }
+
+//#[export_name="_square"]
+//pub extern "system" fn square(x: i32) -> i32 {
+//    x * x
+//}
+
+
 
 //#[export_name="\x01square"]
 
