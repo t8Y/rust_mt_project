@@ -1,7 +1,7 @@
 #[no_mangle]
 #[export_name="_test"]
 pub extern "system" fn test(){
-    println!("hello world!");
+    print!("hello world!");
 }
 
 //#[export_name="_square"]
