@@ -1,21 +1,18 @@
-#[no_mangle]
-
 #[crate_type="rlib"]
 extern {
     fn square(x: i32) -> *mut i32;
 }
 
+#[no_mangle]
 #[export_name="square"]
 pub extern fn _square(x: i32){
     x * x
 }
 
-
 //#[export_name="square"]
 //pub extern fn _square(x: i32){
 //    x * x
 //}
-
 
 //
 //#[export_name="_triple"]
