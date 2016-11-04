@@ -1,6 +1,6 @@
 #[crate_type="rlib"]
 extern {
-    fn square(x: i32) -> *mut i32;
+    fn square(x: i32) -> i32;
 }
 
 #[no_mangle]
