@@ -3,9 +3,8 @@ extern {
     fn square(x: i32) -> i32;
 }
 
-#[no_mangle]
-#[export_name="square"]
-pub extern fn _square(x: i32){
+#[no_mangle]#[export_name="square"]
+pub fn _square(x: i32) -> i32{
     x * x
 }
 
