@@ -1,19 +1,27 @@
 #[no_mangle]
 
-#[export_name="_square"]
-pub extern fn square(x: i32) -> i32 {
-    x *  x
+#[crate_type="rlib"]
+extern {
+    fn square(x: i32) -> *mut i32;
 }
 
-#[export_name="_test"]
-pub extern "system" fn test(){
-    print!("hello world!");
+#[export_name="square"]
+pub extern fn _square(x: i32){
+    x * x
 }
 
-#[export_name="_triple"]
-pub extern "system" fn triple(x: i32) -> i32 {
-    x * x * x
-}
+
+//#[export_name="square"]
+//pub extern fn _square(x: i32){
+//    x * x
+//}
+
+
+//
+//#[export_name="_triple"]
+//pub extern "system" fn triple(x: i32) -> i32 {
+//    x * x * x
+//}
 
 //#[export_name="\x01square"]
 
