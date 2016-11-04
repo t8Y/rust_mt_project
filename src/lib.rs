@@ -1,4 +1,10 @@
 #[no_mangle]
+
+#[export_name="_square"]
+pub extern fn square(x: i32) -> i32 {
+    x *  x
+}
+
 #[export_name="_test"]
 pub extern "system" fn test(){
     print!("hello world!");
@@ -10,10 +16,6 @@ pub extern "system" fn triple(x: i32) -> i32 {
 }
 
 //#[export_name="\x01square"]
-
-//pub extern fn square(x: i32) -> i32 {
-//    x *  x
-//}
 
 //#[cfg(test)]
 //mod tests {
